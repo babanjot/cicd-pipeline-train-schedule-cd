@@ -12,8 +12,7 @@ pipeline {
             when {
                 branch 'master'
             }
-            steps {
-                steps([$class: 'BapSshPromotionPublisherPlugin']) {
+               steps([$class: 'BapSshPromotionPublisherPlugin']) {
                     sshPublisher(
                         failOnError: true,
                         continueOnError: false,
@@ -32,7 +31,7 @@ pipeline {
                         ]
                     )
                 }
-            }
+            
         }
     } 
 }
