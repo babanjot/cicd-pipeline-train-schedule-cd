@@ -24,7 +24,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: ' echo Hello . This will show your destiny > destiny.txt
+                                        execCommand: ' echo Hello . This will show your destiny > destiny.txt'
                                     )
                                 ]
                             )
